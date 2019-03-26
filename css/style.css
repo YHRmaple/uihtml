@@ -1,0 +1,133 @@
+.header {
+    background-color:white;
+    height: 50px;
+    width: 1700px;
+    float: left;
+}
+.content{
+    background-color:rgb(207, 204, 204);
+    width: 1700px;
+    height: 870px;
+    float: left;
+}
+.cars-total {
+    background-color: white;
+    height: 140px;
+    width: 320px;
+    position: absolute;
+    top:80px;
+    left: 230px;
+}
+.cars-now {
+    background-color: white;
+    height: 140px;
+    width: 320px;
+    position: absolute;
+    top:80px;
+    left: 580px;
+}
+.cars-monitor {
+    background-color: white;
+    height: 140px;
+    width: 320px;
+    position: absolute;
+    top:80px;
+    left: 930px;
+}
+.left-column {
+    background-color:rgb(26, 26, 36);
+    height: 920px;
+    width: 200px;
+    float: left;
+}
+.accordionmenu {
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+.accordionmenu a,
+.accordionmenu h2{
+    display: block;
+    color:white;
+    padding: 8px 16px;
+    text-decoration: none;
+    position: relative;
+}
+.accordionmenu h2:before {
+    border: 5px solid white;
+    border-color: white transparent transparent;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    width: 0;
+}
+.accordionmenu p{
+    margin: 0;
+    height: 0;      /*设置高度为0，隐藏内容*/
+    overflow: hidden;     
+    padding: 0 10px;
+    -moz-transition:height 0.5s ease-in;
+    -webkit-transition:height 0.5s ease-in;
+    -o-transition:height 0.5s ease-in;
+    transition:height 0.5s ease-in;
+}
+.accordionmenu :target h2 a,
+.accordionmenu h2 a:focus,
+.accordionmenu h2 a:hover,
+.accordionmenu he a:active {
+    background: #2288dd;
+            color: #ffff;
+}
+.accordionmenu :target p{
+    height: 50px;
+    overflow: auto;
+}
+.accordionmenu :target h2::before{
+    border-color: transparent transparent transparent;
+}
+ul {
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a.active {
+    background-color: rgb(45, 124, 241);
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color:rgb(45, 124, 241);
+    color: white;
+}
+table {
+    padding: 30px;
+    background-color: white;
+    width: 1650px;
+    position: absolute;
+    top: 250px;
+    left: 230px;
+}
+td {
+    height: 50px;
+}
+th {
+    text-align: left;
+}
+.bottom {
+    text-align: center;
+    position: absolute;
+    top: 850px;
+    left: 910px;
+}
