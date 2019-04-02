@@ -1,5 +1,5 @@
 .header {
-    background-color:white;
+    background-color:rgb(233, 23, 23);
     height: 50px;
     width: 1700px;
     float: left;
@@ -88,4 +88,9 @@
 }
 .accordionmenu :target h2::before{
     border-color: transparent transparent transparent;
+}
+.map {
+    position: absolute;
+    left: 210px;
+    top:70px;
 }
