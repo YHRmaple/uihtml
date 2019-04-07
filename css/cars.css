@@ -10,6 +10,7 @@
     height: 870px;
     float: left;
 }
+
 .left-column {
     background-color:rgb(26, 26, 36);
     height: 920px;
@@ -65,8 +66,17 @@
 .accordionmenu :target h2::before{
     border-color: transparent transparent transparent;
 }
-.map {
+table {
+    padding: 30px;
+    background-color: white;
+    width: 1650px;
     position: absolute;
-    left: 210px;
-    top:70px;
+    top: 250px;
+    left: 230px;
+}
+td {
+    height: 35px;
+}
+th {
+    text-align: left;
 }
