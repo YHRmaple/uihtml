@@ -2,36 +2,53 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/cars.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <title>低电量车列表</title>
 </head>
-<body>
+<body style="margin:0">
     <div style="width:1900px">
         <!--左侧导航-->
         <div class="left-column">
             <div style="color: white;text-align: center;font-size: 200%">
-                电量监控
-            </div>
-            <div class="accordionmenu">
-                <div class="Section"  id="home">
-                    <h2><a href="/Home.html">首页</a></h2>
+                    电量监控
                 </div>
-                <div class="Section" id="map">
-                    <h2><a href="/map.html">地图分布</a></h2>
-                </div>
-                <div class="Section" id="cars">
-                    <h2><a href="#cars">车辆监控</a></h2>
-                    <p><a href="">车辆列表</a></p>
-                    <p><a href="low_pow_cars.html">低电量车列表</a></p>
-                    <p><a href="">报表下载</a></p>
-                </div>
-            </div>
-        </div>
+    <ul class="container">
+        <li><div class="_link"><a href="Home.html">首页</a></div></li>
+        <li><div class="_link"><a href="map.html">地图分布</a></div></li>
+        <li>
+            <div class="link">车辆监控</div>
+            <ul class="desc">
+                <li><a href="">车辆列表</a></li>
+                <li><a href="low_pow_cars.html">低电量车列表</a></li>
+                <li><a href="">报表下载</a></li>
+            </ul>
+        </li>
+    </ul>
+     </div>
         <!--顶部-->
         <div class="header">
 
         </div>
+        <!--本页标题-->
+        <div class="_title_">
+            <p style="color:gray;position:absolute;top:5%;left:2%">车辆监控</p>
+            <p style="font-size:1.5em;font-weight: 700;position: absolute;top: 50%;left: 2%">低电量车列表</p>
+        </div>
         <div class="content">
             <!--内容-->
+            <form action="" class="company">
+            <p style="font-size:1.2em">公司：</p>
+            <select>
+                    <option value="changsha">长沙公交集团</option>
+                    <option value="wulumuqi">乌鲁木齐公交集团</option>
+                    <option value="shijiazhuang">石家庄公交集团</option>
+                    <option value="hangzhou">杭州公交集团</option>
+                    <option value="haerbin">哈尔滨公交集团</option>
+                </select>
+                <input type="submit" value="查询" style="width:5em;height:2em;background-color:dodgerblue">
+                <input type="submit" value="重置" style="width:5em;height:2em">
+            </form>
+            <button class="export">导出</button>
             <div class="low_pow_list">
                 <table>
                     <tr>
@@ -158,4 +175,5 @@
             </div>
         </div>
 </body>
+<script src="/js/low_pow_cars.js"></script>
 </html>

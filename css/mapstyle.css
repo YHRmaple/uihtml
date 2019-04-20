@@ -1,72 +1,113 @@
-.header {
-    background-color:rgb(233, 23, 23);
-    height: 50px;
-    width: 1700px;
-    float: left;
+*{
+	margin: 0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
-.content{
+.header {
+    background-color:red;
+    height:10%;
+    width: 90%;
+    position: fixed;
+    left: 10%;
+}
+.content {
     background-color:rgb(207, 204, 204);
-    width: 1700px;
-    height: 870px;
-    float: left;
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    left: 10%;
+    top: 10%;
 }
 .left-column {
     background-color:rgb(26, 26, 36);
-    height: 920px;
-    width: 200px;
+    position: fixed;
+    height: 100%;
+    width: 10%;
     float: left;
 }
-.accordionmenu {
-    list-style-type: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
+ul{
+	list-style: none;
 }
-.accordionmenu a,
-.accordionmenu h2{
+li a{
+	color: grey;
+	text-decoration: none;
+}
+/* 
+ *组件样式
+ */
+
+ .container{
+    width:100%;
+    
+    margin: 20px auto 30px;
+   
+   background: rgb(26, 26, 36);
+}
+._link {
+    border-bottom:1px solid #ccc;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.container .link{
+    cursor: pointer;
+    color: grey;
+    padding: 15px 15px 15px 50px;
+    font-size:1.2em;
+    font-weight: 700;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition: all 0.4s ease;
+   -o-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+ .container li.open .link{
+ 	color:#ED9121;
+ }
+ .container li:last-child .link{
+ 	border-bottom: 0;
+ }
+.container a {
     display: block;
-    color:white;
-    padding: 8px 16px;
-    text-decoration: none;
-    position: relative;
+    padding:12px;
+ 	padding-left: 50px;
+ 	color: #808A87;
+ 	
 }
-.accordionmenu h2:before {
-    border: 5px solid white;
-    border-color: white transparent transparent;
-    content: "";
-    height: 0;
-    position: absolute;
-    top: 20px;
-    left: 170px;
-    width: 0;
+.container a:hover {
+    background: #1E90FF;
+    color: white;
 }
-.accordionmenu p{
-    margin: 0;
-    height: 0;      /*设置高度为0，隐藏内容*/
-    overflow: hidden;     
-    padding: 0 10px;
-    -moz-transition:height 0.25s ease-in;
-    -webkit-transition:height 0.25s ease-in;
-    -o-transition:height 0.25s ease-in;
-    transition:height 0.25s ease-in;
-}
-.accordionmenu :target h2 a,
-.accordionmenu h2 a:focus,
-.accordionmenu h2 a:hover,
-.accordionmenu he a:active {
-    background: #2288dd;
-            color: #ffff;
-}
-.accordionmenu :target p{
-    height: 50px;
-    overflow: auto;
-}
-.accordionmenu :target h2::before{
-    border-color: transparent transparent transparent;
-}
+ /* 
+  *组件内容样式
+  */
+ .desc{
+ 	background: #3D59AB;
+ 	font-size: 14px;
+ 	display: none;
+ }
+ .desc li{
+ 	border-bottom: 1px solid #ccc;
+ }
+ .desc li:last-child{
+ 	border-bottom: 0;
+ }
+ .desc a{
+ 	display: block;
+ 	padding:12px;
+ 	padding-left: 50px;
+ 	color: #808A87;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+
+ }
+ .desc a:hover{
+ 	background: #1E90FF;
+ 	color: #fff;
+ }
 .map {
     position: absolute;
-    left: 210px;
-    top:70px;
+    left: 10%;
+    top:10%;
 }
