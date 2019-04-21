@@ -16,32 +16,35 @@
         <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
     </head>
     <body>
-        <div style="width:1900px">
+        
             <!--左侧导航-->
             <div class="left-column">
-                <div style="color: white;text-align: center;font-size: 200%">
-                        电量监控
+                <div style="color: white;text-align: center;font-size: 200%;position: absolute;top:1%">
+                        <p><img src="/img/电量监控.png" width="30" height="25"> 电量监控</p>
                     </div>
         <ul class="container">
-            <li><div class="_link"><a href="Home.html">首页</a></div></li>
-            <li><div class="_link"><a href="map.html">地图分布</a></div></li>
+            <li><div class="_link"><a href="/HTML/Home.html"><img src="/img/首页.png" width="20" height="20" style="position:absolute;left:10%"> 首页</a></div></li>
+            <li><div class="_link"><a href="/HTML/map.html"><img src="/img/地图.png" width="25" height="25" style="position:absolute;left:10%"> 地图分布</a></div></li>
             <li>
-                <div class="link">车辆监控</div>
+                <div class="link"><img src="/img/车辆监控.png" width="25" height="25" style="position:absolute;left:10%"> 车辆监控</div>
                 <ul class="desc">
-                    <li><a href="">车辆列表</a></li>
-                    <li><a href="low_pow_cars.html">低电量车列表</a></li>
-                    <li><a href="">报表下载</a></li>
+                    <li><a href="/HTML/cars.html">车辆列表</a></li>
+                    <li><a href="/HTML/low_pow_cars.html">低电量车列表</a></li>
+                    <li><a href="/HTML/report_form.html">报表下载</a></li>
                 </ul>
             </li>
         </ul>
          </div>
             <!--顶部-->
             <div class="header">
-                
+                    <img src="/img/heng.png" style="position:absolute;top:30%;left:2%" width="40" height="40">
+                    <div class="admin">
+                        <img src="/img/admin.jpg" alt="adm" style="position:absolute;top:30%;" width="40" height="40"><p style="position:absolute;left:30%;top:40%;font-size: 20px">admin</p>
+                    </div>
             </div>
             <!--内容-->
             <div style="width:1690px;height:850px;border:#ccc solid 1px;" class="map" id="dituContent"></div>
-        </div>
+        
     </body style="margin:0">
     <script type="text/javascript" src="/js/map.js"></script>
 </html>

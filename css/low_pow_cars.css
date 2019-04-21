@@ -9,8 +9,9 @@
     background-color:white;
     height:10%;
     width: 90%;
-    position: fixed;
+    position: absolute;
     left: 10%;
+    border-bottom: 3px solid rgb(207, 204, 204);
 }
 .admin {
     width: 10%;
@@ -19,13 +20,24 @@
     position: absolute;
     left: 90%
 }
-.content {
-    background-color:rgb(207, 204, 204);
+._title_ {
+    background-color:white;
+    height:10%;
     width: 90%;
-    height: 90%;
-    position: fixed;
-    left: 10%;
+    position: absolute;
     top: 10%;
+    left: 10%;
+}
+.content {
+    background-color:white;
+    width: 90%;
+    height: 80%;
+    border: 1em solid rgb(207, 204, 204);
+    padding: 1em;
+    margin: 0;
+    position: absolute;
+    left: 10%;
+    top: 20%;
 }
 .left-column {
     background-color:rgb(26, 26, 36);
@@ -33,6 +45,18 @@
     height: 100%;
     width: 10%;
     float: left;
+}
+.company {
+    height: 20%;
+    width: 50%;
+}
+select {
+    width: 10em;
+    height: 2em;
+}
+.export {
+    position:absolute;
+    top: 15%;
 }
 ul{
 	list-style: none;
@@ -47,9 +71,7 @@ li a{
 
  .container{
     width:100%;
-    
     margin: 20px auto 30px;
-   
    background: rgb(26, 26, 36);
    position: absolute;
    top: 5%;
@@ -58,10 +80,13 @@ li a{
     border-bottom:1px solid #ccc;
     font-size: 1.2em;
     font-weight: 700;
+    -webkit-transition: all 0.4s ease;
+   -o-transition: all 0.4s ease;
+   transition: all 0.4s ease;
 }
 .container .link{
     cursor: pointer;
-    color: grey;
+    color: #808080;
     padding: 15px 15px 15px 50px;
     font-size:1.2em;
     font-weight: 700;
@@ -115,8 +140,23 @@ li a{
  	background: #1E90FF;
  	color: #fff;
  }
-.map {
-    position: absolute;
-    left: 10%;
-    top:10%;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+td,th {
+    height: 45px;
+    width:10em;
+    text-align: left;
+}
+th {
+    background: rgb(240, 235, 235);
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #1E90FF;
+    padding: 10px 10px;
 }

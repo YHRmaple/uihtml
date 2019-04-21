@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/cars.css">
+    <link rel="stylesheet" href="/css/low_pow_cars.css">
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <title>低电量车列表</title>
 </head>
 <body style="margin:0">
-    <div style="width:1900px">
+    
         <!--左侧导航-->
         <div class="left-column">
-            <div style="color: white;text-align: center;font-size: 200%">
-                    电量监控
+            <div style="color: white;text-align: center;font-size: 200%;position: absolute;top:1%">
+                    <p><img src="/img/电量监控.png" width="30" height="25"> 电量监控</p>
                 </div>
     <ul class="container">
-        <li><div class="_link"><a href="Home.html">首页</a></div></li>
-        <li><div class="_link"><a href="map.html">地图分布</a></div></li>
+        <li><div class="_link"><a href="/HTML/Home.html"><img src="/img/首页.png" width="20" height="20" style="position:absolute;left:10%"> 首页</a></div></li>
+        <li><div class="_link"><a href="/HTML/map.html"><img src="/img/地图.png" width="25" height="25" style="position:absolute;left:10%"> 地图分布</a></div></li>
         <li>
-            <div class="link">车辆监控</div>
+            <div class="link"><img src="/img/车辆监控.png" width="25" height="25" style="position:absolute;left:10%"> 车辆监控</div>
             <ul class="desc">
-                <li><a href="">车辆列表</a></li>
-                <li><a href="low_pow_cars.html">低电量车列表</a></li>
-                <li><a href="">报表下载</a></li>
+                <li><a href="/HTML/cars.html">车辆列表</a></li>
+                <li><a href="/HTML/low_pow_cars.html">低电量车列表</a></li>
+                <li><a href="/HTML/report_form.html">报表下载</a></li>
             </ul>
         </li>
     </ul>
      </div>
         <!--顶部-->
         <div class="header">
-
+                <img src="/img/heng.png" style="position:absolute;top:30%;left:2%" width="40" height="40">
+                <div class="admin">
+                    <img src="/img/admin.jpg" alt="adm" style="position:absolute;top:30%;" width="40" height="40"><p style="position:absolute;left:30%;top:40%;font-size: 20px">admin</p>
+                </div>
         </div>
         <!--本页标题-->
         <div class="_title_">
@@ -49,8 +52,9 @@
                 <input type="submit" value="重置" style="width:5em;height:2em">
             </form>
             <button class="export">导出</button>
-            <div class="low_pow_list">
-                <table>
+            <div>
+                <table class="low_pow_table" id="table_result" rules=rows cellspacing=0 align=right>
+                    
                     <tr>
                         <th>车辆自编号</th>
                         <th>车辆型号</th>
@@ -63,6 +67,8 @@
                         <th>当日行驶里程</th>
                         <th>操作</th>
                     </tr>
+                    
+                    <tbody id="table_result">
                     <tr>
                         <td>CL-111</td>
                         <td>万象-K111</td>
@@ -73,7 +79,7 @@
                         <td>异常</td>
                         <td>662公里</td>
                         <td>654公里</td>
-                        <td><a href="" style="text-decoration: none">充电记录</a></td>
+                        <td><a href="/HTML/cars_detail.html" style="text-decoration: none">充电记录</a></td>
                     </tr>
                     <tr>
                         <td>CL-111</td>
@@ -171,7 +177,47 @@
                             <td>654公里</td>
                             <td><a href="" style="text-decoration: none">充电记录</a></td>
                         </tr>
+                        
+                                <tr>
+                                    <th>车辆自编号</th>
+                                    <th>车辆型号</th>
+                                    <th>线路</th>
+                                    <th>车牌号</th>
+                                    <th>车辆启用时间</th>
+                                    <th>剩余电量</th>
+                                    <th>状态</th>
+                                    <th>理论续航里程</th>
+                                    <th>当日行驶里程</th>
+                                    <th>操作</th>
+                                </tr>
+                        
+                        <tr>
+                                <td>CL-111</td>
+                                <td>万象-K111</td>
+                                <td>5路</td>
+                                <td>浙A11111</td>
+                                <td>2018/10/1</td>
+                                <td>7%</td>
+                                <td>异常</td>
+                                <td>662公里</td>
+                                <td>654公里</td>
+                                <td><a href="" style="text-decoration: none">充电记录</a></td>
+                        </tr>
+                        <tr>
+                            <td>CL-111</td>
+                            <td>万象-K111</td>
+                            <td>5路</td>
+                            <td>浙A11111</td>
+                            <td>2018/10/1</td>
+                            <td>7%</td>
+                            <td>异常</td>
+                            <td>662公里</td>
+                            <td>654公里</td>
+                            <td><a href="" style="text-decoration: none">充电记录</a></td>
+                        </tr>
+                    </tbody>
                 </table>
+                <div id="barcon" name="barcon"></div>
             </div>
         </div>
 </body>

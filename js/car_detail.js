@@ -25,7 +25,7 @@ $(function(){
     var putdown = new PutDowm($('.container'),false);
 })
 
-goPage(1,10);
+goPage(1,6);
 function goPage(pno,psize) {
     var itable = document.getElementById("table_result");
     var num = itable.rows.length;
