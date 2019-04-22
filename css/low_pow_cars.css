@@ -58,6 +58,11 @@ select {
     position:absolute;
     top: 15%;
 }
+.set {
+    position: absolute;
+    top:15%;
+    left: 90%;
+}
 ul{
 	list-style: none;
 }
