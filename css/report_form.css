@@ -181,7 +181,7 @@ li a{
 table {
     width: 100%;
     border-collapse: collapse;
-    border: none;
+    border: rgb(240, 235, 235);
 }
 
 td,th{

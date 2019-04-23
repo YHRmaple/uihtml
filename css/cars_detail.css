@@ -161,3 +161,41 @@ a {
     position: absolute;
     top: 32%;
 }
+input[type=submit]
+{
+    background-color: rgb(42, 128, 240);
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type=reset]
+{
+    background-color: white;
+    padding: 5px 15px;
+    border:1px solid rgb(201, 197, 197);
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.export {
+    background-color: white;
+    padding: 5px 12px;
+    border:1px solid rgb(201, 197, 197);
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    top: 13%;
+    left: 20%;
+}

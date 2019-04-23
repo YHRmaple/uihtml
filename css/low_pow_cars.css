@@ -56,11 +56,11 @@ select {
 }
 .export {
     position:absolute;
-    top: 15%;
+    top: 12%;
 }
 .set {
     position: absolute;
-    top:15%;
+    top:12%;
     left: 90%;
 }
 ul{
@@ -147,21 +147,56 @@ li a{
  }
 table {
     width: 100%;
-    border-collapse: collapse;
-    border: none;
+    border: rgb(243, 240, 240);
 }
 
 td,th {
     height: 45px;
     width:10em;
     text-align: left;
+    padding: 5px;
 }
 th {
-    background: rgb(240, 235, 235);
+    background: rgb(243, 240, 240);
 }
 a {
     text-decoration: none;
     display: inline-block;
     color: #1E90FF;
     padding: 10px 10px;
+}
+.export ,.set{
+    background-color: white;
+    padding: 5px 12px;
+    border:1px solid rgb(201, 197, 197);
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type=submit]
+{
+    background-color: rgb(42, 128, 240);
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type=reset]
+{
+    background-color: white;
+    padding: 5px 15px;
+    border:1px solid rgb(201, 197, 197);
+    color: black;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 4px;
 }

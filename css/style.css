@@ -34,6 +34,7 @@
     position: fixed;
     top:13%;
     left: 11%;
+    border-radius: 3px;
 }
 .cars-now {
     background-color: white;
@@ -42,6 +43,7 @@
     position: fixed;
     top:13%;
     left: 32%;
+    border-radius: 3px;
 }
 .cars-monitor {
     background-color: white;
@@ -50,6 +52,7 @@
     position: fixed;
     top:13%;
     left: 53%;
+    border-radius: 3px;
 }
 .left-column {
     background-color:rgb(26, 26, 36);
@@ -58,10 +61,10 @@
     width: 10%;
     float: left;
 }
+
 table {
     width: 100%;
-    border-collapse: collapse;
-    border: none;
+    border: rgb(243, 240, 240);
     position: absolute;
     top: 30%;
     left: 1%;
@@ -77,7 +80,7 @@ td {
     background: white;
 }
 th {
-    background: rgb(240, 235, 235);
+    background: rgb(243, 240, 240);
 }
 .bottom {
     text-align: center;
@@ -166,3 +169,38 @@ li a{
  	background: #1E90FF;
  	color: #fff;
  }
+ .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

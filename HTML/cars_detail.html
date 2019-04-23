@@ -71,12 +71,12 @@
         <div class="charging">
         <p style="font-size:1.2em;font-weight:700;padding: 15px 15px 0 15px">充电记录</p>
         <form action="" style="padding:15px;">
-            <input type="date" style="width: 11em">
-            <input type="submit" value="查询" style="background-color:dodgerblue;width:5em;height:2em;">
-            <input type="submit" value="重置" style="width:5em;height:2em;">
-            <input type="submit" value="导出" style="width:5em;height:2em;">
+            <input type="date" style="width: 10%;border-radius: 2px;">
+            <input type="submit" value="查询" >
+            <input type="reset" value="重置" >
         </form>
-        <table class="record" id="table_result" rules=rows cellspacing=0 align=right>
+        <button class="export">导出</button>
+        <table class="record" id="table_result" rules="rows">
             <tr>
                 <th>充电地点</th>
                 <th>充电开始时间</th>
