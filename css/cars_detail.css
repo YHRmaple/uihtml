@@ -141,7 +141,7 @@ li a{
     width: 100%;
     padding: 15px;
     border-collapse: collapse;
-    border: none;
+    border:rgb(243, 240, 240);
 }
 .record td,th {
     height: 45px;
