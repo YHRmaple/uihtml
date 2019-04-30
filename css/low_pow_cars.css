@@ -176,6 +176,10 @@ a {
     cursor: pointer;
     border-radius: 4px;
 }
+.set :active{
+    
+    border-color: red;
+}
 input[type=submit]
 {
     background-color: rgb(42, 128, 240);
