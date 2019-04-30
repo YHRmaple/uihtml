@@ -120,3 +120,15 @@ li a{
     left: 10%;
     top:10%;
 }
+table {
+    padding: 15px;
+    width: 100%;
+    font-size: 1em;
+}
+td {
+    width: 50%;
+}
+tr{
+    text-align:left;
+    height: 50px;
+}
