@@ -66,70 +66,16 @@
                                 <th>出车总数</th>
                                 <th>出车总数占比</th>
                             </tr>
-                            <tr>
-                                <td>长沙公交集团</td>
-                                <td>638</td>
-                                <td>683</td>
-                                <td>3%</td>
-                                <td>683</td>
-                                <td>39%</td>
-                            </tr>
-                            <tr>
-                                <td>乌鲁木齐公交集团</td>
-                                <td>759</td>
-                                <td>759</td>
-                                <td>19%</td>
-                                <td>759</td>
-                                <td>6%</td>
-                            </tr>
-                            <tr>
-                                    <td>长沙公交集团</td>
-                                    <td>638</td>
-                                    <td>683</td>
-                                    <td>3%</td>
-                                    <td>683</td>
-                                    <td>39%</td>
-                            </tr>
-                            <tr>
-                                    <td>长沙公交集团</td>
-                                    <td>638</td>
-                                    <td>683</td>
-                                    <td>3%</td>
-                                    <td>683</td>
-                                    <td>39%</td>
-                            </tr>
-                            <tr>
-                                    <td>长沙公交集团</td>
-                                    <td>638</td>
-                                    <td>683</td>
-                                    <td>3%</td>
-                                    <td>683</td>
-                                    <td>39%</td>
-                            </tr>
-                            <tr>
-                                    <td>长沙公交集团</td>
-                                    <td>638</td>
-                                    <td>683</td>
-                                    <td>3%</td>
-                                    <td>683</td>
-                                    <td>39%</td>
-                            </tr>
-                            <tr>
-                                    <td>长沙公交集团</td>
-                                    <td>638</td>
-                                    <td>683</td>
-                                    <td>3%</td>
-                                    <td>683</td>
-                                    <td>39%</td>
-                            </tr>
-                            <tr>
-                                    <td>长沙公交集团</td>
-                                    <td>638</td>
-                                    <td>683</td>
-                                    <td>3%</td>
-                                    <td>683</td>
-                                    <td>39%</td>
-                            </tr>
+                            <% for(var i=0;i<data.length;i++){ %>
+                                <tr>
+                                    <td><%= data[i].Cname></td>
+                                    <td><%= data[i].Tnum></td>
+                                    <td><%= data[i].Mnum></td>
+                                    <td><%= data[i].Mper></td>
+                                    <td><%= data[i].Rnum></td>
+                                    <td><%= data[i].Rper></td>
+                                </tr>
+                            <% } %>
                         </table>
                     </div>
                     <div class="bottom">
